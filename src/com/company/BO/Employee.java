@@ -64,16 +64,8 @@ public class Employee{
         this.address = address;
     }
 
-    public ArrayList getCustomerList() {
+    public ArrayList<Customer> getCustomerList() {
         return customerList;
-    }
-
-    public String getCustomers() {
-        String customers = "";
-        for (Customer customer : this.customerList){
-            customers += customer.getId() + ", ";
-        }
-        return customers;
     }
 
     public void setCustomers(Customer customer) {

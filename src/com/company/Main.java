@@ -51,15 +51,15 @@ public class Main {
         employee3.setCustomers(customer3);
         employee3.setCustomers(customer4);
 
-//        employeeDAO.gdpaDelete(employee1);
-//        employeeDAO.gdpaDelete(employee2);
-//        employeeDAO.gdpaDelete(employee3);
+        employeeDAO.gdpaDelete(employee1);
+        employeeDAO.gdpaDelete(employee2);
+        employeeDAO.gdpaDelete(employee3);
 
-        System.out.println(employeeDAO.getAll().contains(employee1));
+//        System.out.println(employeeDAO.getAll().contains(employee1));
 
-//        employeeDAO.save(employee1);
-//        employeeDAO.save(employee2);
-//        employeeDAO.save(employee3);
+        employeeDAO.save(employee1);
+        employeeDAO.save(employee2);
+        employeeDAO.save(employee3);
 
 //        customerDAO.gdpaDelete(customer1);
 //        customerDAO.gdpaDelete(customer2);

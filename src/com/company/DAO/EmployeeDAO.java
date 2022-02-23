@@ -1,5 +1,6 @@
 package com.company.DAO;
 
+import com.company.BO.Customer;
 import com.company.BO.Employee;
 import com.sun.media.jfxmediaimpl.HostUtils;
 import org.w3c.dom.Document;
@@ -96,7 +97,11 @@ public class EmployeeDAO implements DAO<Employee> {
                 Element address = database.createElement("address");
                 address.appendChild(database.createTextNode(employee.getAddress()));
                 Element customers = database.createElement("customers");
-                customers.appendChild(database.createTextNode(employee.getCustomers()));
+                for (Customer customer : employee.getCustomerList()){
+                    Element customerId = database.createElement("id");
+                    customerId.setTextContent(String.valueOf(customer.getId()));
+                    customers.appendChild(customerId);
+                }
 
                 newEmployeeNode.appendChild(name);
                 newEmployeeNode.appendChild(address);
