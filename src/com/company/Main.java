@@ -30,7 +30,7 @@ public class Main {
                 }
             }
         }*/
-//        DataTransfer.getInstance().read("customers",2);
+
         CustomerDAO customerDAO = new CustomerDAO();
         Customer customer1 = new Customer(1, "John", "Gata 1");
         Customer customer2 = new Customer(2, "Frida", "Gata 2");
