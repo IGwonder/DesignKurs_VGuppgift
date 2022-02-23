@@ -10,7 +10,6 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        // write your code here
 /*        String databasePath = "database.xml";
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
