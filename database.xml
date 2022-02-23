@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><KundStrukturSystemAB>
+    <customers>
+   <customer active="active" id="1"><name>John</name><address>Gata 1</address></customer><customer active="active" id="2"><name>Frida</name><address>Gata 2</address></customer><customer active="active" id="3"><name>Tess</name><address>Gata 3</address></customer><customer active="active" id="4"><name>Jack</name><address>Gata 4</address></customer></customers>
+    <employees>
+    <employee active="active" id="2"><name>Knox</name><address>Gata B</address><customers>2, 3, </customers></employee><employee active="active" id="3"><name>Alan</name><address>Gata C</address><customers>3, 4, </customers></employee><employee active="active" id="1"><name>Peter</name><address>Gata A</address><customers>1, 2, </customers></employee></employees>
+    <orders>
+    </orders>
+</KundStrukturSystemAB>
