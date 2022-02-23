@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<KundStrukturSystemAB>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><KundStrukturSystemAB>
     <customers>
         <customer active="active" id="1">
             <name>John</name>
@@ -19,31 +18,7 @@
         </customer>
     </customers>
     <employees>
-        <employee active="active" id="1">
-            <name>Peter</name>
-            <address>Gata A</address>
-            <customers>
-                <id>1</id>
-                <id>2</id>
-            </customers>
-        </employee>
-        <employee active="active" id="2">
-            <name>Knox</name>
-            <address>Gata B</address>
-            <customers>
-                <id>2</id>
-                <id>3</id>
-            </customers>
-        </employee>
-        <employee active="active" id="3">
-            <name>Alan</name>
-            <address>Gata C</address>
-            <customers>
-                <id>3</id>
-                <id>4</id>
-            </customers>
-        </employee>
-    </employees>
-    <orders>
-    </orders>
+    <employee active="active" id="1"><name>Peter</name><address>Gata A</address><customers><id>1</id><id>2</id></customers></employee><employee active="active" id="2"><name>Knox</name><address>Gata B</address><customers><id>2</id><id>3</id></customers></employee><employee active="active" id="3"><name>Alan</name><address>Gata C</address><customers><id>3</id><id>4</id></customers></employee></employees>
+    <sales>
+    </sales>
 </KundStrukturSystemAB>

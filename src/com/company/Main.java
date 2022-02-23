@@ -4,6 +4,16 @@ import com.company.BO.Customer;
 import com.company.BO.Employee;
 import com.company.DAO.CustomerDAO;
 import com.company.DAO.EmployeeDAO;
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 
 public class Main {
@@ -51,15 +61,16 @@ public class Main {
         employee3.setCustomers(customer3);
         employee3.setCustomers(customer4);
 
-        employeeDAO.gdpaDelete(employee1);
-        employeeDAO.gdpaDelete(employee2);
-        employeeDAO.gdpaDelete(employee3);
+//        employeeDAO.gdpaDelete(employee1);
+//        employeeDAO.gdpaDelete(employee2);
+//        employeeDAO.gdpaDelete(employee3);
 
 //        System.out.println(employeeDAO.getAll().contains(employee1));
 
-        employeeDAO.save(employee1);
-        employeeDAO.save(employee2);
-        employeeDAO.save(employee3);
+//        employeeDAO.save(employee1);
+//        employeeDAO.save(employee2);
+//        employeeDAO.save(employee3);
+
 
 //        customerDAO.gdpaDelete(customer1);
 //        customerDAO.gdpaDelete(customer2);
@@ -84,6 +95,8 @@ public class Main {
 //                    + "Name: " + employee.getName() + "\n"
 //                    + "Address: " + employee.getAddress() + "\n");
 //        }
+
     }
+
 }
 
