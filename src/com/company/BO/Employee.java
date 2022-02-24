@@ -8,6 +8,7 @@ public class Employee{
     private String name;
     private String address;
     private ArrayList<Customer> customerList = new ArrayList<>();
+    private ArrayList<Sales> salesList = new ArrayList<>();
 
     public Employee() {
     }
@@ -70,6 +71,14 @@ public class Employee{
 
     public void setCustomers(Customer customer) {
         this.customerList.add(customer);
+    }
+
+    public ArrayList<Sales> getSalesList() {
+        return salesList;
+    }
+
+    public void setSalesList(Sales sale) {
+        this.salesList.add(sale);
     }
 
     @Override

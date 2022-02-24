@@ -114,8 +114,8 @@ public class CustomerDAO implements DAO<Customer> {
     public void update(Customer newCustomer, Customer oldCustomer) {
         try {
             Element element = DataTransfer.getInstance().read("customers");
-            Node oldChild = locateObject(element, "customer",oldCustomer.getId());
-            element.replaceChild(save(newCustomer), oldChild);
+            Node oldCustomerNode = locateObject(element, "customer",oldCustomer.getId());
+            element.replaceChild(save(newCustomer), oldCustomerNode);
             DataTransfer.getInstance().write();
         } catch (Exception e) {
             System.out.println("Update error: This customer doesn't exist");

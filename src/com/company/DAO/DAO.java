@@ -16,16 +16,16 @@ public interface DAO<T> {
 
     String locateObjectData(Node node, String elementName);
 
-    T get(int id) throws IOException, ParserConfigurationException, SAXException, TransformerException;
+    T get(int id) throws IOException, ParserConfigurationException, SAXException;
 
-    ArrayList getAll() throws IOException, ParserConfigurationException, SAXException, TransformerException;
+    ArrayList<T> getAll() throws IOException, ParserConfigurationException, SAXException;
 
     Node save(T t) throws Exception;
 
-    void update(T newObj, T oldObj) throws IOException, ParserConfigurationException, SAXException, TransformerException;
+    void update(T newObj, T oldObj);
 
-    void gdpaDelete(T t) throws IOException, ParserConfigurationException, SAXException, TransformerException;
+    void gdpaDelete(T t);
 
-    void delete(T t) throws IOException, ParserConfigurationException, SAXException, TransformerException;
+    void delete(T t);
 
 }

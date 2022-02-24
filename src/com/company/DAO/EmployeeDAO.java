@@ -25,6 +25,7 @@ public class EmployeeDAO implements DAO<Employee> {
         Node employeeData = null;
         for (int j = 0; j < element.getElementsByTagName(elementTag).getLength(); j++) {
             employeeData = element.getElementsByTagName(elementTag).item(j);
+
             if (employeeData.getAttributes().getNamedItem("id").getTextContent().equals(String.valueOf(employeeId))) {
                 return employeeData;
             }
@@ -122,8 +123,8 @@ public class EmployeeDAO implements DAO<Employee> {
     public void update(Employee newEmployee, Employee oldEmployee) {
         try {
             Element element = DataTransfer.getInstance().read("customers");
-            Node oldChild = locateObject(element, "employee", oldEmployee.getId());
-            element.replaceChild(save(newEmployee), oldChild);
+            Node oldEmployeeNode = locateObject(element, "employee", oldEmployee.getId());
+            element.replaceChild(save(newEmployee), oldEmployeeNode);
             DataTransfer.getInstance().write();
         } catch (Exception e) {
             System.out.println("Update error: This employee doesn't exist");

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><KundStrukturSystemAB>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<KundStrukturSystemAB>
     <customers>
         <customer active="active" id="1">
             <name>John</name>
@@ -18,7 +19,67 @@
         </customer>
     </customers>
     <employees>
-    <employee active="active" id="1"><name>Peter</name><address>Gata A</address><customers><id>1</id><id>2</id></customers></employee><employee active="active" id="2"><name>Knox</name><address>Gata B</address><customers><id>2</id><id>3</id></customers></employee><employee active="active" id="3"><name>Alan</name><address>Gata C</address><customers><id>3</id><id>4</id></customers></employee></employees>
+        <employee active="active" id="1">
+            <name>Peter</name>
+            <address>Gata A</address>
+            <customers>
+                <id>1</id>
+                <id>2</id>
+            </customers>
+        </employee>
+        <employee active="active" id="2">
+            <name>Knox</name>
+            <address>Gata B</address>
+            <customers>
+                <id>2</id>
+                <id>3</id>
+            </customers>
+        </employee>
+        <employee active="active" id="3">
+            <name>Alan</name>
+            <address>Gata C</address>
+            <customers>
+                <id>3</id>
+                <id>4</id>
+            </customers>
+        </employee>
+    </employees>
     <sales>
+        <sale customerId="1" employeeId="1" refunded="" saleId="1">
+            <product>Product 1</product>
+            <price>100</price>
+            <copies>4</copies>
+            <saleDate>2022-01-15</saleDate>
+        </sale>
+        <sale customerId="2" employeeId="1" refunded="" saleId="2">
+            <product>Product 2</product>
+            <price>50</price>
+            <copies>2</copies>
+            <saleDate>2022-02-15</saleDate>
+        </sale>
+        <sale customerId="1" employeeId="2" refunded="" saleId="3">
+            <product>Product 3</product>
+            <price>200</price>
+            <copies>1</copies>
+            <saleDate>2022-02-20</saleDate>
+        </sale>
+        <sale customerId="3" employeeId="3" refunded="" saleId="4">
+            <product>Product 4</product>
+            <price>75</price>
+            <copies>1</copies>
+            <saleDate>2022-02-21</saleDate>
+        </sale>
+        <sale customerId="3" employeeId="2" refunded="" saleId="5">
+            <product>Product 3</product>
+            <price>400</price>
+            <copies>2</copies>
+            <saleDate>2022-02-22</saleDate>
+        </sale>
+        <sale customerId="4" employeeId="3" refunded="" saleId="6">
+            <product>Product 1</product>
+            <price>50</price>
+            <copies>2</copies>
+            <saleDate>2022-02-22</saleDate>
+        </sale>
     </sales>
 </KundStrukturSystemAB>
