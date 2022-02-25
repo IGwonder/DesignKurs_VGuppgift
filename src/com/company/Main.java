@@ -81,12 +81,12 @@ public class Main {
         employee3.setSalesList(sale6);
 
 
-        salesDAO.save(sale1);
-        salesDAO.save(sale2);
-        salesDAO.save(sale3);
-        salesDAO.save(sale4);
-        salesDAO.save(sale5);
-        salesDAO.save(sale6);
+//        salesDAO.save(sale1);
+//        salesDAO.save(sale2);
+//        salesDAO.save(sale3);
+//        salesDAO.save(sale4);
+//        salesDAO.save(sale5);
+//        salesDAO.save(sale6);
 
 
 //        employeeDAO.gdpaDelete(employee1);
